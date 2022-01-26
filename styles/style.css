@@ -15,7 +15,12 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Hides The Scrollbar */
 .element::-webkit-scrollbar { width: 0 !important }
+
+::-webkit-scrollbar {
+  display: none;
+}
 
 /* Main Container */
 .container {
@@ -100,10 +105,6 @@ nav ul li a:hover {
   border: none;
   border-radius: 5px;
   text-decoration: none;
-}
-
-::-webkit-scrollbar {
-  display: none;
 }
 
 .more {
