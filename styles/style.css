@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,700&display=swap');
 
 /* All Styling */
 * {
@@ -60,12 +61,30 @@ nav ul li a:hover {
 /* Main Content Styling */
 .main {
     width: 100%;
-    height: 80%;
+    height: 650%;
     display: flex;
     position: relative;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
+    transform: translateY(75%);
+}
+
+.main h1 {
+    font-size: 100px;
+    font-family: 'Roboto Bold 700 italic';
+}
+
+.main .LearnMore {
+    font-family: 'Roboto Bold 700 italic';
+    font-size: 30px;
+    color: #151d21;
+    background: #ffc107;
+    padding: 6px;
+    margin-top: 30px;
+    margin-right: 5%;
+    margin-left: 5%;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
 }
