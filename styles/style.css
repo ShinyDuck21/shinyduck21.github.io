@@ -7,7 +7,15 @@
   padding: 0%;
   font-family: Roboto;
   background-color: rgb(255, 255, 255);
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+.element::-webkit-scrollbar { width: 0 !important }
 
 /* Main Container */
 .container {
@@ -16,8 +24,10 @@
   padding-left: 8%;
   padding-right: 8%;
   box-sizing: border-box;
-  overflow: hidden;
   position: relative;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  overflow-y: scroll;
 }
 
 /* The Navbar */
@@ -67,7 +77,10 @@ nav ul li a:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  transform: translateY(75%);
+  margin: 35px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  transform: translateY(50%);
 }
 
 .main h1 {
@@ -87,4 +100,24 @@ nav ul li a:hover {
   border: none;
   border-radius: 5px;
   text-decoration: none;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.more {
+  width: 100%;
+  height: 650%;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 8%;
+  transform: translateY(100%);
+}
+
+section {
+  text-align: center;
 }
