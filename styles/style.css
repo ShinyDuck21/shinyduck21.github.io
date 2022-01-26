@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
+/* All Styling */
 * {
     margin: 0%;
     padding: 0%;
@@ -7,6 +8,7 @@
     background-color: rgb(255, 255, 255);
 }
 
+/* Main Container */
 .container {
     width: 100%;
     min-height: 100vh;
@@ -17,6 +19,7 @@
     position: relative;
 }
 
+/* The Navbar */
 .navbar {
     width: 100%;
     display: flex;
@@ -24,15 +27,10 @@
     margin-left: 15px;
 }
 
+/* Logo Styling */
 .logo {
     width: 75px;
     margin: 15px 0;
-}
-
-.menu {
-    width: 25px;
-    display: flex;
-    justify-content: flex-end;
 }
 
 nav {
